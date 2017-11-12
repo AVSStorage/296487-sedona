@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+<body>
+<header class="header">
+  <nav class="main-menu">
+    <ul class="main-menu__list">
+      <li><a class="mein-menu__item" href="#">ИНФОРМАЦИЯ</a></li>
+      <li><a class="mein-menu__item" href="#">ФОТО И ВИДЕО</a></li>
+      <li><a class="logo" href="#"><img src="img/2-layers.png" alt="Логотип"></a></li>
+      <li><a class="mein-menu__item" href="#">КАРТА ШТАТА</a></li>
+      <li><a class="mein-menu__item" href="#">ГОСТИНИЦЫ</a></li>
+    </ul>
+  </nav>
+  <div class="list-of-items">
+    <form enctype="text/plain" method="post">
+      <div class="sorter-list">
+        <span class="sorter-list__label">Инфрастркутура</span>
+        <div class="sorter-item">
+          <label class="sorter-item__label" for="sorter-item__check1">Бассейн</label>
+          <input class="sorter-item__input" type="checkbox" id="sorter-item__check1">
+          <label class="sorter-item__label" for="sorter-item__check2">Парковка</label>
+          <input class="sorter-item__input" type="checkbox" id="sorter-item__check2">
+          <label class="sorter-item__label" for="sorter-item__check3">Wi-fi</label>
+          <input class="sorter-item__input" type="checkbox" id="sorter-item__check3">
+        </div>
+        <div class="sorter-item">
+          <span class="second-criterion__title">Инфрастркутура</span>
+          <label class="sorter-item__label" for="sorter-item2__check1">Гостиница</label>
+          <input class="sorter-item__input" type="checkbox" id="sorter-item2__check1">
+          <label class="sorter-item__label" for="sorter-item2__check2">Мотель</label>
+          <input class="sorter-item__input" type="checkbox" id="sorter-item2__check2">
+          <label class=sorter-item__label" for="sorter-item2__check3">Апартмаенты</label>
+          <input class="sorter-item__input" type="checkbox" id="sorter-item2__check3">
+        </div>
+        <div class="price">
+          <span>Стоимость в сутки(р)</span>
+          <div class="price-value">
+            <span>от 0</span>
+            <span>до 3000</span>
+            <div class="range">
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</header>
+<main>
+  <div class="sorting">
+    <span class="sorting-result">Найдено:</span>
+    <span class="sorting__title">Сортировка:</span>
+    <button class="sorting__button">По цене</button>
+    <button  class="sorting__button">По типу</button>
+    <button  class="sorting__button">По рейтенгу</button>
+    <button type="submit" class="sorting__up"></button>
+    <button type="submit" class="sorting__down"></button>
+  </div>
+  <div class="filter-results">
+    <div class="result">
+      <h3 class="result__title">Amara Resort & Spa</h3>
+      <span class="result__info">Гостиница</span>
+      <span class="result__info">от 4000 Р.</span>
+      <a href="#" class="result_about">Подробнее</a>
+      <a href="#" class="result_booking">Забронировать</a>
+      <span>Рейтинг 8,5</span>
+      <div class="rating-stars">
+        <div class="rating-stars1">
+        </div>
+        <div class="rating-stars2">
+        </div>
+        <div class="rating-stars3">
+        </div>
+        <div class="rating-stars4">
+        </div>
+        <div class="rating-stars5">
+        </div>
+      </div>
+    </div>
+    <div class="results">
+      <h3 class="result__title">Desert Quail Inn</h3>
+      <span class="result__info">Мотель</span>
+      <span class="result__info">от 3000 Р.</span>
+      <a href="#" class="result_about">Подробнее</a>
+      <a href="#" class="result_booking">Забронировать</a>
+      <span>Рейтинг 8,9</span>
+    </div>
+    <div class="results">
+      <h3 class="result__title">Villas at Poco Diablo</h3>
+      <span class="result__info">Апартаменты</span>
+      <span class="result__info">от 2000 Р.</span>
+      <a href="#" class="result_about">Подробнее</a>
+      <a href="#" class="result_booking">Забронировать</a>
+      <span>Рейтинг 9,2</span>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-label">
+      <p class="footer-label__hashteg">#VISITSEDONA</p>
+    </div>
+    <div class="social-list">
+      <a href="" class="social-item"><img class="social-item__img" src="img/t.png">Твиттер</a>
+      <a href="" class="social-item"><img class="social-item__img" src="img/fb-icon.png">Фейсбук</a>
+      <a href="" class="social-item"><img class="social-item__img" src="img/youtube.png" alt="">Ютьюб</a>
+    </div>
+    <div class="footer-autors">
+      <p class="footer-autors__label">WEBSITE by</p>
+      <a href="#" class="html-academy"><img src="img/logo-name.png" alt="HTML-академия" width="115" height="41"></a>
+    </div>
+  </footer>
+</main>
+</body>
+</html>

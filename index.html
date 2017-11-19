@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+
+  <link rel="stylesheet" href="css/normilize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="header">
@@ -10,29 +13,29 @@
     <ul class="main-menu__list">
       <li><a class="mein-menu__item" href="#">ИНФОРМАЦИЯ</a></li>
       <li><a class="mein-menu__item" href="#">ФОТО И ВИДЕО</a></li>
-      <li><a class="logo" href="#"><img src="img/logo-sedona.png" alt="Логотип"></a></li>
+      <li><a class="logo" href="#"><img class="main-menu__item-logo" src="img/logo-sedona.png" alt="Логотип"></a></li>
       <li><a class="mein-menu__item" href="#">КАРТА ШТАТА</a></li>
       <li><a class="mein-menu__item" href="#">ГОСТИНИЦЫ</a></li>
     </ul>
   </nav>
 </header>
 <main>
-  <div class="preview">
-    <p>СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>
-      ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
-    </p>
-    <span>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</span>
-  </div>
   <div class="reasons-list">
-    <div class="reasons-list__preview"></div>
+    <div class="reasons-list__preview">
+      <p>СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>
+        ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
+      </p>
+      <span>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</span>
+    </div>
     <div class="reasons-item">
-      <span class="reasons-item__label">НАСТОЯЩИЙ ГОРОДОК</span>
+      <span class="reasons-item__label">НАСТОЯЩИЙ<br> ГОРОДОК</span>
       <span class="reasons-item__number">  — №1 —</span>
       <p class="reasons-item__slogan">СЕДОНА — НЕ АТТРАКЦИОН<br> ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ<br>СВОЯ ЖИЗНЬ</p>
     </div>
   </div>
     <div class="categories">
       <div class="categories-item">
+        <div class="categories-item__photo"></div>
         <span class="categories-item__label">Жилье</span>
         <p class="categories-item__slogan">Рекомендуем пожить<br>в настоящем мотеле,<br> все как в кино!</p>
       </div>
@@ -48,7 +51,6 @@
       </div>
     </div>
   <div class="reasons-list">
-    <div class="reasons-list__preview"></div>
     <div class="reasons-item">
       <span class="reasons-item__label">ТАМ ЕСТЬ Мост дьявола</span>
       <span class="reasons-item__number">  — №2 —</span>
@@ -73,7 +75,7 @@
       </p>
     </div>
     <div class="reasons-item">
-               <span class="reasons-item__label">МАЛО<br>
+      <span class="reasons-item__label">МАЛО<br>
                ТУРИСТОВ</span>
       <span class="reasons-item__number">  — №5 —</span>
       <p class="reasons-item__slogan">Большинство едет в<br> гранд каньон и<br>толпится там</p>
@@ -90,29 +92,29 @@
       <button class="search" type="submit">Поиск гостиницы в седоне</button>
       <div class="fields">
         <form enctype="text/plain" method="post">
-          <label class="fields__label" for="fields__input-checkin">ДАТА ЗАЕЗДА </label>
-          <input id="fields__input-checkin" type="text" placeholder="24 Апреля 2017">
-          <label class="fields__label" for="fields__input-leave">ДАТА ВЫЕЗДА </label>
-          <input id="fields__input-leave" type="text" placeholder="4 июля 2017">
-          <button class="fields__button" type="submit">Найти</button>
+          <label class="fields__label" for="fields__input-checkin">ДАТА ЗАЕЗДА: </label>
+          <input class="fields__input" id="fields__input-checkin" type="text" value="24 Апреля 2017">
+          <label class="fields__label" for="fields__input-leave">ДАТА ВЫЕЗДА: </label>
+          <input class="fields__input" id="fields__input-leave" type="text" value="4 июля 2017">
           <div class="counter">
+            <label class="fields__label" for="ad_counter">Взрослые</label>
             <div class="counter__down">
             </div>
-            <label class="fields__label" for="ad_counter">Взрослые</label>
             <input id="ad_counter" class="counter__input" type="text">
             <div class="counter__up">
             </div>
           </div>
           <div class="counter">
+            <label class="fields__label" for="ch_counter">Дети </label>
             <div class="counter__down">
             </div>
-            <label class="fields__label" for="ch_counter">Дети </label>
             <input id="ch_counter" class="counter__input"  type="text">
             <div class="counter__up">
             </div>
           </div>
+          <button class="fields__button" type="submit">Найти</button>
         </form>
-        <img src="img/map.jpg" alt="Карта" width="1202" height="595">
+        <img class="map" src="img/map.jpg" alt="Карта" width="1202" height="595">
       </div>
     </div>
   </div>
@@ -122,13 +124,13 @@
     <p class="footer-label__hashteg">#VISITSEDONA</p>
   </div>
   <div class="social-list">
-    <a href="" class="social-item"><img class="social-item__img" src="img/t.svg">Твиттер</a>
-    <a href="" class="social-item"><img class="social-item__img" src="img/fb-icon.svg">Фейсбук</a>
-    <a href="" class="social-item"><img class="social-item__img" src="img/youtube.svg" alt="">Ютьюб</a>
+    <a href="" class="social-item"><img class="social-item__img" src="img/t.svg" width="17" height="15"><span class="social-item__label">Твиттер</span></a>
+    <a href="" class="social-item"><img class="social-item__img" src="img/fb-icon.svg" width="12" height="22"><span class="social-item__label">Фейсбук</span></a>
+    <a href="" class="social-item"><img class="social-item__img" src="img/youtube.svg" width="20" height="16" alt=""><span class="social-item__label">Ютьюб</span></a>
   </div>
   <div class="footer-autors">
     <p class="footer-autors__label">WEBSITE by</p>
-    <a href="#" class="html-academy"><img src="img/logo-name.svg" alt="HTML-академия" width="115" height="41"></a>
+    <a href="#" class="html-academy"><img class="html-academy-logo" src="img/logo-name.svg" alt="HTML-академия" width="115" height="41"></a>
   </div>
 </footer>
 </body>

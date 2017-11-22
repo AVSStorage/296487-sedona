@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/normilize.css">
 </head>
 <body>
 <header class="header">
@@ -30,16 +32,16 @@
           <input class="sorter-item__input" type="checkbox" id="sorter-item__check3">
         </div>
         <div class="sorter-item">
-          <span class="second-criterion__title">Инфрастркутура</span>
+          <span class="second-criterion__title">Тип жилья</span>
           <label class="sorter-item__label" for="sorter-item2__check1">Гостиница</label>
           <input class="sorter-item__input" type="checkbox" id="sorter-item2__check1">
           <label class="sorter-item__label" for="sorter-item2__check2">Мотель</label>
           <input class="sorter-item__input" type="checkbox" id="sorter-item2__check2">
-          <label class=sorter-item__label" for="sorter-item2__check3">Апартмаенты</label>
+          <label class="sorter-item__label" for="sorter-item2__check3">Апартмаенты</label>
           <input class="sorter-item__input" type="checkbox" id="sorter-item2__check3">
         </div>
         <div class="price">
-          <span>Стоимость в сутки(р)</span>
+          <span class="price__label">Стоимость в сутки(р)</span>
           <div class="price-value">
             <span>от 0</span>
             <span>до 3000</span>
@@ -49,11 +51,11 @@
         </div>
       </div>
       <div class="sorting">
-        <span class="sorting-result">Найдено:</span>
+        <span class="sorting-result">Найдено:3</span>
         <span class="sorting__title">Сортировка:</span>
         <button class="sorting__button">По цене</button>
         <button  class="sorting__button">По типу</button>
-        <button  class="sorting__button">По рейтенгу</button>
+        <button  class="sorting__button">По рейтингу</button>
         <button type="submit" class="sorting__up">Упорядочить от меньшего к большему</button>
         <button type="submit" class="sorting__down">Упорядочить от большему к меньшему</button>
       </div>
@@ -64,9 +66,9 @@
       <h3 class="filter-results-list-item__title">Amara Resort & Spa</h3>
       <span class="filter-results-list-item__info">Гостиница</span>
       <span class="filter-results-list-item__info">от 4000 Р.</span>
-      <a href="#" class="filter-results-list_about">Подробнее</a>
-      <a href="#" class="filter-results-list_booking">Забронировать</a>
-      <span>Рейтинг 8,5</span>
+      <a href="#" class="filter-results-list-item_about">Подробнее</a>
+     <a href="#" class="filter-results-list-item_booking">Забронировать</a>
+      <span class="filter-results-list_rating">Рейтинг 8,5</span>
       <div class="rating-stars-list">
         <div class="rating-stars">
         </div>
@@ -86,8 +88,8 @@
       <span class="filter-results-list-item__info">от 3000 Р.</span>
       <a href="#" class="filter-results-list-item_about">Подробнее</a>
       <a href="#" class="filter-results-list-item_booking">Забронировать</a>
-      <span>Рейтинг 8,9</span>
-      <div class="rating-stars">
+      <span class="filter-results-list_rating">Рейтинг 8,9</span>
+      <div class="rating-stars-list">
         <div class="rating-stars">
         </div>
         <div class="rating-stars">
@@ -104,9 +106,9 @@
       <h3 class="filter-results-list-item__title">Villas at Poco Diablo</h3>
       <span class="filter-results-list-item__info">Апартаменты</span>
       <span class="filter-results-list-item__info">от 2000 Р.</span>
-      <a href="#" class=filter-results-list-item_about">Подробнее</a>
+      <a href="#" class="filter-results-list-item_about">Подробнее</a>
       <a href="#" class="filter-results-list-item_booking">Забронировать</a>
-      <span>Рейтинг 9,2</span>
+      <span class="filter-results-list_rating">Рейтинг 9,2</span>
       <div class="rating-stars-list">
         <div class="rating-stars">
         </div>
@@ -126,9 +128,9 @@
       <p class="footer-label__hashteg">#VISITSEDONA</p>
     </div>
     <div class="social-list">
-      <a href="#" class="social-item"><img class="social-item__img" src="img/t.svg">Твиттер</a>
-      <a href="#" class="social-item"><img class="social-item__img" src="img/fb-icon.svg">Фейсбук</a>
-      <a href="#" class="social-item"><img class="social-item__img" src="img/youtube.svg" alt="">Ютьюб</a>
+      <a href="#" class="social-item"><img class="social-item__img" src="img/t.svg"><span class="social-item__label">Твиттер</span></a>
+      <a href="#" class="social-item"><img class="social-item__img" src="img/fb-icon.svg"><span class="social-item__label">Фейсбук</span></a>
+      <a href="#" class="social-item"><img class="social-item__img" src="img/youtube.svg" alt=""><span class="social-item__label">Ютьюб</span></a>
     </div>
     <div class="footer-autors">
       <p class="footer-autors__label">WEBSITE by</p>

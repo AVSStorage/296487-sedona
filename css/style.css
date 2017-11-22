@@ -254,5 +254,132 @@ background-color: gainsboro;
   font:inherit;
   font-weight: 400;
 }
+/*catalog*/
+.list-of-items{
+  font:inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.sorter-item__label{
+  display:block;
+}
+.price .price__label{
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+}
+.sorting *{
+  display:inline-block;
+}
+.sorting-result{
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.sorting__title{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.sorting__button:first-of-type{
+ color: #81b3d2;
+}
+.sorting__button{
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  background: none;
+  border:none;
+  opacity: 0.3;
+  color: #000000;
+}
+.sorting__title{
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000000;
+}
+.sorting__up,
+.sorting__down{
+  width:20px;
+  min-height:20px;
+  font-size: 0;
+  border:none;
+}
+.sorting__up{
+  background-image: url("/img/icon-up-dir.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+}
+.sorting__down{
+  background-image: url("/img/icon-down-dir.svg");
+  background-position: 0 0;
+}
+.filter-results-list-item__title{
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.filter-results-list-item__info{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.filter-results-list-item_about,
+.filter-results-list-item_booking{
+
+  display:inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color:#ffffff;
+
+}
+.filter-results-list-item_about{
+  padding-left:17px;
+  padding-top:8px;
+  padding-right:17px;
+  padding-bottom:8px;
+  text-align: center;
+  background-color: #81b3d2;
+}
+.filter-results-list-item_booking{
+  width: 142px;
+  height: 27px;
+  padding-left:16px;
+  padding-top:8px;
+  padding-right:16px;
+  padding-bottom:2px;
+  text-align: center;
+  background-color: #766357;
+}
+
+.filter-results-list_rating{
+  display:inline-block;
+  padding-left:11px;
+  padding-top:9px;
+  padding-right:8px;
+  padding-bottom:9px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+
+}
 
 

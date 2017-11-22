@@ -1,10 +1,16 @@
 @font-face{
   font-family: 'PT Sans';
-  src: url('ptsans.woff') format('woff') ;
-  src: url('ptsans.woff2') format('woff2');
+  src: url('/fonts/ptsans.woff') format('woff') ;
+  src: url('/fonts/ptsans.woff2') format('woff2');
   font-weight: normal;
   font-style:normal;
 }
+@font-face{
+  font-family: 'PT Sans';
+  src: url('../fonts/ptsansbold.woff') format('woff') ;
+  src: url('../fonts/ptsansbold.woff2') format('woff2');
+  font-weight: 700;
+  font-style:normal;}
 body{
   font-size: 14px;
   line-height: 26px;
@@ -83,17 +89,17 @@ background-color: gainsboro;
   color: #000000;
 }
 .categories-item:first-child{
-  background-image: url("icon-1.svg");
+  background-image: url("/img/icon-1.svg");
   background-repeat: no-repeat;
   background-position:center;
 }
 .categories-item:nth-child(2){
-  background-image: url("icon-3.svg");
+  background-image: url("/img/icon-3.svg");
   background-repeat: no-repeat;
   background-position:center;
 }
 .categories-item:last-child{
-  background-image: url("icon-2.svg");
+  background-image: url("/img/icon-2.svg");
   background-repeat: no-repeat;
   background-position:center;
 }
@@ -135,7 +141,7 @@ background-color: gainsboro;
   color: #000000;
   background-color: #f2f2f2;
   border:none;
-  background-image: url("calendar.svg");
+  background-image: url("/img/calendar.svg");
   background-repeat: no-repeat;
   background-position: 338px 8px;
 }
@@ -168,13 +174,13 @@ background-color: gainsboro;
   display:inline-block;
 }
 .counter__down{
-  background-image: url("-.svg");
+  background-image: url("/img/-.svg");
   background-repeat: no-repeat;
   background-position: center;
   left:40px;
 }
 .counter__up{
-  background-image: url("+.svg");
+  background-image: url("/img/+.svg");
   background-repeat: no-repeat;
   background-position: center;
 }

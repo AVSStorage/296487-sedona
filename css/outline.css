@@ -6,8 +6,8 @@ body {
   min-width: 1122px;
   min-height: 1750px;
 }
-body {
-  background-image: url('sedona-index-1200.jpg');
+.body-index{
+  background-image: url('../img/sedona-index-1200.jpg');
   background-size: 1372px auto;
   background-repeat: no-repeat;
 }
@@ -28,6 +28,7 @@ body {
   display:flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap:wrap;
   margin-top:0;
   margin-left:76px;
   padding: 0;
@@ -41,10 +42,6 @@ body {
   top:0;
   left:500px;
   position:absolute;
-}
-.feature-list{
-  margin:0;
-  padding:0;
 }
 .background-preview{
   display:flex;
@@ -75,6 +72,8 @@ body {
   background-color: rgba(150,150,255,0.3);
 }
 .feature-list{
+  margin:0;
+  padding:0;
   width:1287px;
   margin-left:42px;
  }
@@ -152,7 +151,6 @@ body {
   justify-content: center;;
   align-items: stretch;
   background-color: rgba(255, 12, 0, 0.7);
-
 }
 .counter-box{
   display:flex;
@@ -171,7 +169,8 @@ body {
   justify-content: space-around;
   align-items: center;
   width:1287px;
-  min-height:120px;
+  min-height:128px;
+  margin-left:42px;
   background-color: rgba(255, 230, 0, 0.44);
 }
 .social-list{
@@ -180,4 +179,296 @@ body {
   display:flex;
   align-items: center;
   justify-content: space-between;
+}
+/*catalog*/
+.body-catalog{
+  background-image: url('../img/sedona-hotels-1200.jpg');
+  background-size: 1372px auto;
+  background-repeat: no-repeat;
+  min-width: 1122px;
+  min-height: 1150px;
+
+}
+.catalog-main{
+  margin:0;
+  padding:0;
+  width:1287px;
+  margin-left:42px;
+}
+.list-of-items{
+  margin-top:-16px;
+  padding:0;
+  min-height:327px;
+}
+.sorter-list{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:1287px;
+  min-height:228px;
+  background-color: rgba(18, 255, 0, 0.3);
+}
+
+.sorter-list-box{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  width:430px;
+  min-height:228px;
+  margin-left:74px;
+  background-color: rgba(255, 230, 0, 0.3);
+
+}
+.sorter-item{
+  display:flex;
+  flex-direction:column;
+  width:155px;
+  min-height:228px;
+  border:2px dashed yellow;
+  background-color: rgba(47, 218, 0, 0.3);
+}
+.price{
+  width:345px;
+  min-height:150px;
+  margin-right:75px;
+  border:2px dashed black;
+  background-color: rgba(47, 218, 0, 0.3);
+}
+.sorting-list-box{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  width:1137px;
+  min-height:94px;
+  background-color: rgba(161, 167, 174, 0.3);
+  margin-left:74px;
+  border:2px dashed black;
+}
+.sorting-list{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:1287px;
+  min-height:95px;
+  background-color: rgba(0, 41, 255, 0.3);
+  border:2px dashed #ffe600;
+}
+.sorting-filter{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  width:560px;
+  background-color: rgba(255, 230, 0, 0.3);
+  border:2px dashed #ff5800;
+}
+.sorting-filter___arrow{
+  display: flex;
+  align-items: center;
+  width:40px;
+  background-color: rgba(255, 88, 0, 0.3);
+}
+.filter-results-list{
+  min-height:476px;
+  width:1287px;
+  background-color: rgba(0, 255, 243, 0.3);
+}
+.filter-results-list-item{
+  display: flex;
+  min-height:155px;
+  background-color: rgba(255, 230, 0, 0.3);
+  border:2px solid black;
+}
+.filter-results-list-item-box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width:460px;
+  min-height:155px;
+  background-color: rgba(255, 241, 41, 0.3);
+  margin-left:70px;
+}
+.filter-results-list-item-photo{
+  width:148px;
+  min-height:98px;
+  background-color: rgba(255, 7, 0, 0.3);
+}
+.filter-results-list-item__descr{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:278px;
+  min-height:105px;
+  background-color: rgba(6, 12, 255, 0.3);
+}
+.rating-box{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left:557px;
+  width:153px;
+  background-color: rgba(255, 12, 0, 0.3);
+}
+.rating-stars-list{
+  width:108px;
+  height:20px;
+  margin-left:20px;
+  margin-top:23px;
+  background-color: rgba(255, 0, 213, 0.3);
+}
+.rating-value{
+  margin-bottom: 35px;
+  padding-top:5px;
+  padding-left:18px;
+  width: 100px;
+  height: 28px;
+  background-color: rgba(255, 230, 0, 0.3);
+}
+  .sorting__up{
+    font-size: 0;
+    width:20px;
+    height:18px;
+    background-image: url("../img/icon-up-dir.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: white;
+
+}
+  .sorting__down{
+    font-size: 0;
+    width:20px;
+    height:18px;
+    background-image: url("../img/icon-down-dir.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: white;
+  }
+.filter-range {
+  width: 334px;
+  margin: 31px auto;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
 }

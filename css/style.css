@@ -104,7 +104,7 @@ background-color: gainsboro;
   background-position:center;
 }
 .input .search{
-  width: 568px;
+  width: 610px;
   height: 86px;
   color: #ffffff;
   font-family:inherit;
@@ -133,8 +133,7 @@ background-color: gainsboro;
 .fields__input{
   width: 346px;
   height: 38px;
-  margin-left:167px;
-  padding-left: 20px;
+  margin-left:22px;
   font:inherit;
   line-height: 26px;
   text-transform: uppercase;
@@ -145,6 +144,7 @@ background-color: gainsboro;
   background-repeat: no-repeat;
   background-position: 338px 8px;
 }
+
 .fields__input:hover{
   background-color: #ebebeb;
 }
@@ -155,38 +155,35 @@ background-color: gainsboro;
 .fields .map{
   visibility: hidden;
 }
+
 .counter__input{
-  width: 38px;
-  height: 38px;
+  width: 35px;
+  min-height: 36px;
   background-color: #f2f2f2;
   border:none;
-  position: relative;
-  display: inline-block;
-}
 
+}
 .counter__down,
 .counter__up{
-  position: absolute;
-
   width: 38px;
   height: 38px;
   background-color: #f2f2f2;
-  display:inline-block;
+
 }
 .counter__down{
-  background-image: url("/img/-.svg");
+  background-image: url("../img/-.svg");
   background-repeat: no-repeat;
   background-position: center;
   left:40px;
 }
 .counter__up{
-  background-image: url("/img/+.svg");
+  background-image: url("../img/+.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
-.fields .fields__button{
-  width: 458px;
-  height: 58px;
+.fields  .fields__button{
+  width: 495px;
+  height: 62px;
   font:inherit;
   font-size: 21px;
   line-height:inherit;
@@ -194,6 +191,7 @@ background-color: gainsboro;
   background-color: #81b3d2;
   color: #ffffff;
   border:none;
+
 }
 .fields  .fields__button:hover{
   background-color: #669ec0;
@@ -226,11 +224,9 @@ background-color: gainsboro;
   color: inherit;
 }
 .social-item{
-  display: inline-block;
-  width: 40px;
-  min-height: 40px;
-  margin-right: 10px;
-  vertical-align: middle;
+  margin-top:9px;
+  width: 50px;
+  height: 52px;
   background-color: #81b3d2;
 }
 .social-item .social-item__img{
@@ -315,7 +311,7 @@ background-color: gainsboro;
   border:none;
 }
 .sorting__up{
-  background-image: url("/img/icon-up-dir.svg");
+  background-image: url("../img/icon-up-dir.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 

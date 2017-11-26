@@ -1,0 +1,183 @@
+/* ----- Сеточные стили ----- */
+
+
+html,
+body {
+  min-width: 1122px;
+  min-height: 1750px;
+}
+body {
+  background-image: url('sedona-index-1200.jpg');
+  background-size: 1372px auto;
+  background-repeat: no-repeat;
+}
+.header{
+  background-color: rgba(255,0,0,0.3);
+  min-height: 60px;
+  margin-left:42px;
+  margin-right:20px;
+}
+.main-navigation{
+ background-color: rgba(0,255,0,0.3);
+  min-height: 60px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-navigation{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top:0;
+  margin-left:76px;
+  padding: 0;
+  list-style: none;
+  width:1135px;
+  min-height: 60px;
+  background-color: rgba(0,0,255,0.3);
+  position:relative;
+}
+.site-navigation .logo{
+  top:0;
+  left:500px;
+  position:absolute;
+}
+.feature-list{
+  margin:0;
+  padding:0;
+}
+.background-preview{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:0;
+  margin-top:-16px;/* сдвиг фона */
+  min-height:545px;
+  width:1287px;
+  background-color: rgba(0,255,255,0.3);
+}
+.background-preview__label{
+  margin-top:20px;
+  padding-top:20px;
+  border:2px dashed black;
+  min-height:100px;
+  width:500px;
+  background-color: rgba(255,0,255,0.3);
+}
+.reasons-list__preview{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  width:1287px;
+  min-height:231px;
+  background-color: rgba(150,150,255,0.3);
+}
+.feature-list{
+  width:1287px;
+  margin-left:42px;
+ }
+.main-features-box .reasons-list{
+  display:flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  min-height:255px;
+  background-color:rgba(0,0,255,0.7);
+}
+
+.main-features-box .reasons-item{
+  border:2px dashed white;
+}
+.reasons-image{
+  border:2px solid black;
+  width:862px;
+}
+.reasons-item,.categories-item{
+  border:2px dashed yellow;
+  width: 425px;
+  min-height: 272px;
+  background-color:rgba(0,255,0,0.7);
+}
+.main-features-list{
+  display:flex;
+  flex-direction:row;
+  min-height:272px;
+  background-color: rgba(255, 88, 0, 0.7);
+}
+.categories{
+  display:flex;
+  flex-direction:row;
+  min-height:352px;
+  margin-left:0;
+  background-color: rgba(255, 88, 0, 0.7);
+}
+.categories-item{
+  border:2px dashed #060cff;
+  background-color: rgba(0, 255, 243, 0.7);
+}
+.offer-preview{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  width:1287px;
+  min-height:308px;
+  background-color:rgba(0,0,180,0.3);
+}
+.offer-preview .search{
+  margin-top:52px;
+}
+.offer{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  min-height:814px;
+  background-color: rgba(25, 139, 7, 0.44);
+}
+.input {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 609px;
+  min-height: 424px;
+  background-color: rgba(6, 12, 255, 0.44);
+
+}
+.fields
+  {display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;;
+  align-items: stretch;
+  background-color: rgba(255, 12, 0, 0.7);
+
+}
+.counter-box{
+  display:flex;
+  justify-content: space-around;
+}
+.counter{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 12, 0, 0.7);
+}
+.footer {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width:1287px;
+  min-height:120px;
+  background-color: rgba(255, 230, 0, 0.44);
+}
+.social-list{
+  width:160px;
+  min-height:52px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}

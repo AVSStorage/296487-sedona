@@ -33,48 +33,63 @@ body{
   color:inherit;}
 
 .reasons-list__preview{
-  color:inherit;
-  font:inherit;
+  font-size:14px;
+  font-weight: bold;
   line-height: inherit;
   text-transform: inherit;
   text-align: center;
 }
-.reasons-list__preview p{
+.reasons-list__preview__title{
   font-size: 21px;
 }
-.reasons-list__preview span{
+.reasons-list__preview__info{
   font:inherit;
-  font-weight: 400;
+  font-weight: 100;
   line-height: inherit;
   color: #333333;
+  text-transform: uppercase;
 }
 .reasons-item{
   background-color: #81b3d2;
 }
-.reasons-item:nth-last-child(2),
-.reasons-item:nth-last-child(3),
-.reasons-item:nth-child(3){
+.reasons-item:nth-last-child(1){
 background-color: gainsboro;
 }
 .reasons-item{
-  width: 256px;
-  height: 256px;
   color: #ffffff;
   font-size:14px;
   font-weight: 400;
+
+}
+.categories-item__photo{
+  background-image: url("../img/icon-1.svg");
+  width: 75px;
+  height: 76px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+.main-features-box:last-child{
+  flex-direction: row-reverse;
 }
 .reasons-item .reasons-item__label{
   font-size: 21px;
   font-weight: 700;
   color: inherit;
+  text-align: center;
+  margin-top:0;
+  padding-top: 0;
 }
 .reasons-item .reasons-item__number{
   font:inherit;
   color:inherit;
+  margin-top:16px;
 }
 .reasons-item .reasons-item__slogan{
-  font:inherit;
+  font-size:13px;
+  font-weight: 400;
+  text-align: center;
   color:inherit;
+
 }
 .categories{
   font:inherit;
@@ -82,26 +97,17 @@ background-color: gainsboro;
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
+  background-color: white;
 }
 .categories-item .categories-item__label{
   font-size: 21px;
   font-weight: 700;
   color: #000000;
+  padding-top: 32px;
 }
-.categories-item:first-child{
-  background-image: url("/img/icon-1.svg");
-  background-repeat: no-repeat;
-  background-position:center;
-}
-.categories-item:nth-child(2){
-  background-image: url("/img/icon-3.svg");
-  background-repeat: no-repeat;
-  background-position:center;
-}
-.categories-item:last-child{
-  background-image: url("/img/icon-2.svg");
-  background-repeat: no-repeat;
-  background-position:center;
+.categories-item__slogan{
+  padding-top: 12px;
+  text-align: center;
 }
 .input .search{
   width: 610px;
@@ -260,14 +266,16 @@ background-color: gainsboro;
 }
 .sorter-item__label{
   display:block;
+
+}
+.sorter-item__label{
+  margin-left:20px;
+
 }
 .price .price__label{
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
-}
-.sorting *{
-  display:inline-block;
 }
 .sorting-result{
   font-size: 21px;
@@ -283,7 +291,6 @@ background-color: gainsboro;
  color: #81b3d2;
 }
 .sorting__button{
-
   font-family: inherit;
   font-size: 12px;
   font-weight: 400;
@@ -297,7 +304,6 @@ background-color: gainsboro;
   color: #000000;
 }
 .sorting__title{
-
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
@@ -327,55 +333,56 @@ background-color: gainsboro;
   text-transform: uppercase;
 }
 .filter-results-list-item__info{
+  display:inline-block;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
+  margin-bottom:20px;
+
 }
 .filter-results-list-item_about,
 .filter-results-list-item_booking{
-
-  display:inline-block;
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
   text-transform: uppercase;
   text-decoration: none;
   color:#ffffff;
-
+  margin-left:5px;
 }
 .filter-results-list-item_about{
-  padding-left:17px;
-  padding-top:8px;
-  padding-right:17px;
-  padding-bottom:8px;
+  display:inline-block;
+  padding-left:14px;
+  padding-top:4px;
+  padding-right:14px;
+  padding-bottom:4px;
   text-align: center;
   background-color: #81b3d2;
 }
 .filter-results-list-item_booking{
+  display:inline-block;
   width: 142px;
-  height: 27px;
-  padding-left:16px;
-  padding-top:8px;
-  padding-right:16px;
-  padding-bottom:2px;
+  padding-left:6px;
+  padding-top:4px;
+  padding-right:6px;
+  padding-bottom:4px;
   text-align: center;
   background-color: #766357;
+
 }
 
 .filter-results-list_rating{
-  display:inline-block;
-  padding-left:11px;
-  padding-top:9px;
-  padding-right:8px;
-  padding-bottom:9px;
+  display:block;
+  font-size:13px;
+  font-weight:400;
   text-align: center;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  text-transform: uppercase;
-  background-color: #f2f2f2;
+  padding-top: 6px;
+  line-height: 24px;
+
+
 
 }
+
 
 

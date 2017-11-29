@@ -8,18 +8,20 @@ body {
 }
 .body-index{
   background-image: url('../img/sedona-index-1200.jpg');
-  background-size: 1372px auto;
+  background-size: 1287px auto;
   background-repeat: no-repeat;
+
 }
 .header{
   background-color: rgba(255,0,0,0.3);
-  min-height: 60px;
-  margin-left:42px;
+  width: 1207px;
+  min-height: 55px;
+  margin-left:39px;
   margin-right:20px;
 }
 .main-navigation{
  background-color: rgba(0,255,0,0.3);
-  min-height: 60px;
+  min-height: 55px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -30,17 +32,17 @@ body {
   justify-content: space-between;
   flex-wrap:wrap;
   margin-top:0;
-  margin-left:76px;
+  margin-left:60px;
   padding: 0;
   list-style: none;
-  width:1135px;
-  min-height: 60px;
+  width:1074px;
+  min-height: 55px;
   background-color: rgba(0,0,255,0.3);
   position:relative;
 }
 .site-navigation .logo{
   top:0;
-  left:500px;
+  left:475px;
   position:absolute;
 }
 .background-preview{
@@ -49,53 +51,54 @@ body {
   justify-content: center;
   align-items: center;
   padding:0;
+  background-size: cover;
+  background-image: url("../img/5-layers.png");
+  background-position:1207px 400px ;
+  background-repeat: no-repeat;
+  margin-left: 19px;
   margin-top:-16px;/* сдвиг фона */
-  min-height:545px;
-  width:1287px;
+  min-height:515px;
+  width:1207px;
   background-color: rgba(0,255,255,0.3);
 }
-.background-preview__label{
-  margin-top:20px;
-  padding-top:20px;
-  border:2px dashed black;
-  min-height:100px;
-  width:500px;
-  background-color: rgba(255,0,255,0.3);
-}
+
 .reasons-list__preview{
   display:flex;
   flex-direction:column;
-  justify-content: center;
+  justify-content: space-between;
   align-items:center;
-  width:1287px;
-  min-height:231px;
+  width:1207px;
+  margin-left: 19px;
+  min-height:180px;
   background-color: rgba(150,150,255,0.3);
 }
 .feature-list{
   margin:0;
   padding:0;
-  width:1287px;
-  margin-left:42px;
+  width:1207px;
+  margin-left:20px;
  }
 .main-features-box .reasons-list{
   display:flex;
   flex-direction: row;
   justify-content:flex-start;
-  min-height:255px;
+  width:1207px;
+  min-height:263px;
   background-color:rgba(0,0,255,0.7);
+  margin-left:20px;
 }
 
-.main-features-box .reasons-item .right{
-  border:2px dashed white;
-}
 .reasons-image{
-  border:2px solid black;
+  /*border:2px solid black;*/
   width:862px;
+  background-image: url("../img/layer-13.png");
+  background-repeat: no-repeat;
+  background-size: 862px 263px;
 }
 .reasons-item,.categories-item{
-  border:2px dashed yellow;
-  width: 425px;
-  min-height: 272px;
+  /*border:2px dashed yellow;*/
+  width: 426px;
+  min-height: 235px;
   /*background-color:rgba(0,255,0,0.3);*/
 }
 .categories-item-box{
@@ -115,54 +118,59 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 48px 63px;
-  border:2px dashed #ff000f;
+  padding: 43px 48px;
+  /*border:2px dashed #ff000f;*/
   width: 295px;
   min-height: 160px;
+}
+.main-features-list .reasons-item{
+  width: 402px;
+  min-height: 265px;
 }
 .main-features-list{
   display:flex;
   flex-direction:row;
-  min-height:272px;
+  margin-left: 20px;
+  width:1207px;
+  min-height:265px;
   background-color: rgba(255, 88, 0, 0.7);
 }
 .categories{
   display:flex;
   flex-direction:row;
-  min-height:352px;
-  margin-left:0;
+  width:1207px;
+  min-height:326px;
+  margin-left:20px;
   background-color: rgba(255, 88, 0, 0.7);
 }
-.categories-item{
-  /*border:2px dashed #060cff;*/
-  /*background-color: rgba(0, 255, 243, 0.7);*/
-}
+
 .offer-preview{
   display:flex;
   flex-direction:column;
   align-items: center;
-  justify-content: center;
-  width:1287px;
-  min-height:308px;
+  justify-content: space-between;
+  width:1207px;
+  min-height:289px;
   background-color:rgba(0,0,180,0.3);
 }
-.offer-preview .search{
-  margin-top:52px;
-}
+
 .offer{
   display:flex;
   flex-direction: column;
   align-items: center;
-  min-height:814px;
+  width:1207px;
+  margin-left:20px;
+  min-height:765px;
   background-color: rgba(25, 139, 7, 0.44);
 }
 .input {
+
   display:flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 609px;
-  min-height: 424px;
+  width: 571px;
+  min-height: 400px;
   background-color: rgba(6, 12, 255, 0.44);
 
 }
@@ -170,37 +178,50 @@ body {
   {display:flex;
   flex-direction: row;
   flex-wrap:wrap;
-  justify-content: center;;
-  align-items: stretch;
-  background-color: rgba(255, 12, 0, 0.7);
+  justify-content: center;
+  margin-top: 23px;
+  background-color: rgba(255, 12, 0, 0.2);
 }
 .counter-box{
   display:flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  width:481px;
+  min-height:50px;
 }
 .counter{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
-  background-color: rgba(255, 12, 0, 0.7);
+  background-color: rgba(0, 33, 255, 0.2);
+  margin-bottom:25px;
 }
 .footer {
   display:flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width:1287px;
-  min-height:128px;
-  margin-left:42px;
+  width:1207px;
+  min-height:100px;
+  margin-left:39px;
   background-color: rgba(255, 230, 0, 0.44);
 }
 .social-list{
-  width:160px;
-  min-height:52px;
+  margin-right: 26px;
+  margin-top:30px;
+  width:152px;
+  min-height:49px;
   display:flex;
   align-items: center;
   justify-content: space-between;
+  background-color: rgba(255, 0, 3, 0.44);
+
+}
+.footer-autors{
+  display: flex;
+  margin-left:20px;
 }
 /*catalog*/
 .body-catalog{
@@ -247,14 +268,14 @@ body {
   justify-content: space-between;
   width:155px;
   min-height:228px;
-  border:2px dashed yellow;
+  /*border:2px dashed yellow;*/
   background-color: rgba(47, 218, 0, 0.3);
 }
 .price{
   width:345px;
   min-height:150px;
   margin-right:75px;
-  border:2px dashed black;
+  /*border:2px dashed black;*/
   background-color: rgba(47, 218, 0, 0.3);
 }
 .sorting-list-box{
@@ -265,7 +286,7 @@ body {
   min-height:94px;
   background-color: rgba(161, 167, 174, 0.3);
   margin-left:74px;
-  border:2px dashed black;
+  /*border:2px dashed black;*/
 }
 .sorting-list{
   display:flex;
@@ -274,7 +295,7 @@ body {
   width:1287px;
   min-height:95px;
   background-color: rgba(0, 41, 255, 0.3);
-  border:2px dashed #ffe600;
+  /*border:2px dashed #ffe600;*/
 }
 .sorting-filter{
   display:flex;
@@ -283,7 +304,7 @@ body {
   align-items: center;
   width:560px;
   background-color: rgba(255, 230, 0, 0.3);
-  border:2px dashed #ff5800;
+  /*border:2px dashed #ff5800;*/
 }
 .sorting-filter___arrow{
   display: flex;

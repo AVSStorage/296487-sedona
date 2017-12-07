@@ -34,8 +34,9 @@
     transform: translateY(0);
   }
 }
-
-html,
+*{
+  box-sizing:content-box;
+}
 body
 {
   background-color	: gainsboro;
@@ -47,7 +48,8 @@ body
   min-height	: 1750px;
   text-transform	: uppercase;
   width	: 1200px;
-  padding: 0 18px;
+  padding: 0 36px;
+  margin:0 auto;
 }
 .header
 {
@@ -888,7 +890,7 @@ body
 }
 .sorter-item__label::before,
 .sorter-item__label:hover::before
-{
+ { cursor: pointer;
   background-image	: url("../img/checkbox-off.svg");
   background-position	: 0 0;
   background-repeat	: no-repeat;
@@ -898,6 +900,7 @@ body
   position	: absolute;
   width	: 25px;
 }
+
 .sorter-item__label:disabled::before
 {
   background-image	: url("../img/checkbox-disabled.svg");

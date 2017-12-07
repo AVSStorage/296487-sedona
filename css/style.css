@@ -35,6 +35,7 @@
   }
 }
 *{
+  -webkit-box-sizing:content-box;
   box-sizing:content-box;
 }
 body
@@ -299,7 +300,6 @@ body
   font-size	: 21px;
   font-weight	: 700;
   display:block;
-  /*padding: 0% 38% 0;*/
 }
 .categories-item__slogan
 {
@@ -353,7 +353,7 @@ body
   width	: 1200px;
 
 }
- .map
+.map
 { position	: absolute;
   top:290px;
   left:0;
@@ -361,12 +361,11 @@ body
   min-height: 535px;
 
 }
- .offer-box{
-   min-height: 535px;
- }
+.offer-box{
+  min-height: 535px;
+}
 .offer-preview
 {
-
   background-color	: #ffffff;
   color	: #333333;
   display	: -webkit-box;
@@ -418,7 +417,7 @@ body
   line-height	: inherit;
   text-transform	: inherit;
   width	: 568px;
-  margin-top:26px;
+  margin-top:27px;
 }
 .search-hotels__button:hover
 {
@@ -432,22 +431,10 @@ body
 .input
 {
   visibility: hidden;
-   z-index: 2;
-  /*-webkit-box-align	: center;*/
-  /*-ms-flex-align	: center;*/
-  /*align-items	: center;*/
+  z-index: 2;
   background-color	: #ffffff;
   -webkit-box-shadow	: 0 7px 15px rgba(0, 1, 1, 0.15);
   box-shadow	: 0 7px 15px rgba(0, 1, 1, 0.15);
-  /*display	: -webkit-box;*/
-  /*display	: -ms-flexbox;*/
-  /*display	: flex;*/
-  /*-webkit-box-orient	: vertical;*/
-  /*-webkit-box-direction	: normal;*/
-  /*-ms-flex-direction	: column;*/
-  /*flex-direction	: column;*/
-  /*-ms-flex-pack	: distribute;*/
-  /*justify-content	: space-around;*/
   min-height	: 393px;
   width	: 570px;
 }
@@ -551,7 +538,11 @@ body
   width:335px;
 }
 .counter-box{
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 13px;
 }
@@ -890,7 +881,7 @@ body
 }
 .sorter-item__label::before,
 .sorter-item__label:hover::before
- { cursor: pointer;
+{ cursor: pointer;
   background-image	: url("../img/checkbox-off.svg");
   background-position	: 0 0;
   background-repeat	: no-repeat;
@@ -1309,18 +1300,6 @@ body
 }
 .filter-results-list-item__descr
 {
-  /*display	: -webkit-box;*/
-  /*display	: -ms-flexbox;*/
-  /*display	: flex;*/
-  /*-webkit-box-orient	: horizontal;*/
-  /*-webkit-box-direction	: normal;*/
-  /*-ms-flex-direction	: row;*/
-  /*flex-direction	: row;*/
-  /*-ms-flex-wrap	: wrap;*/
-  /*flex-wrap	: wrap;*/
-  /*-webkit-box-pack	: justify;*/
-  /*-ms-flex-pack	: justify;*/
-  /*justify-content	: space-between;*/
   min-height	: 103px;
   width	: 265px;
 }

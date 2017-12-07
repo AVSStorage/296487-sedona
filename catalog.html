@@ -10,10 +10,10 @@
 <div class="wrapper">
 <header class="header">
   <nav class="main-navigation">
+    <a class="logo" href="#"><img class="main-menu__item-logo" src="img/logo-sedona.png" alt="Логотип"></a>
     <ul class="site-navigation">
-      <li  class="main-menu__item">Информация</li>
+      <li ><a class="main-menu__item">Информация</a></li>
       <li><a class="main-menu__item" href="#">Фото и видео</a></li>
-      <li><a class="logo" href="#"><img class="main-menu__item-logo" src="img/logo-sedona.png" alt="Логотип"></a></li>
       <li><a class="main-menu__item" href="#">Карта штата</a></li>
       <li><a class="main-menu__item" href="#">Гостиницы</a></li>
     </ul>
@@ -51,8 +51,8 @@
           <div class="filter-range">
             <div class="filter-range-title">Стоимость в сутки (р):</div>
             <div class="price-controls">
-              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              <label class="min-price">от 0 </label>
+              <label class="max-price">до 3000</label>
             </div>
             <div class="range-controls">
               <div class="scale">
@@ -71,7 +71,7 @@
             <span class="sorting-result">Найдено:3</span>
             <div class="sorting__button-box">
               <span class="sorting__title">Сортировка:</span>
-              <button class="sorting__button">По цене</button>
+              <button class="sorting__button-special">По цене</button>
               <button  class="sorting__button">По типу</button>
               <button  class="sorting__button">По рейтингу</button>
             </div>
@@ -91,7 +91,7 @@
               <h3 class="filter-results-list-item__title">Amara Resort & Spa</h3>
               <div class="filter-results-list-item__info-box">
                 <span class="filter-results-list-item__info">Гостиница</span>
-                <span class="filter-results-list-item__info">от 4000 Р.</span>
+                <span class="filter-results-list-item__price-info">от 4000 Р.</span>
               </div>
               <div class="filter-results-list-item-buttons">
                 <a href="#" class="filter-results-list-item_about"><span class="button_about">Подробнее</span></a>
@@ -112,9 +112,7 @@
               <div class="rating-stars">
               </div>
             </div>
-            <div class="rating-value">
               <span class="filter-results-list_rating">Рейтинг:8,5</span>
-            </div>
           </div>
         </div>
         <div class="filter-results-list-item">
@@ -125,7 +123,7 @@
               <h3 class="filter-results-list-item__title">Desert Quail Inn</h3>
               <div class="filter-results-list-item__info-box">
                 <span class="filter-results-list-item__info">Мотель</span>
-                <span class="filter-results-list-item__info">от 3000 Р.</span>
+                <span class="filter-results-list-item__price-info">от 3000 Р.</span>
               </div>
               <div class="filter-results-list-item-buttons">
                 <a href="#" class="filter-results-list-item_about"><span class="button_about">Подробнее</span></a>
@@ -146,9 +144,7 @@
               <div class="rating-stars">
               </div>
             </div>
-            <div class="rating-value">
-              <span class="filter-results-list_rating">Рейтинг 8,9</span>
-            </div>
+              <span class="filter-results-list_rating">Рейтинг:8,9</span>
           </div>
         </div>
         <div class="filter-results-list-item">
@@ -159,7 +155,7 @@
               <h3 class="filter-results-list-item__title">Villas at Poco Diablo</h3>
               <div class="filter-results-list-item__info-box">
                 <span class="filter-results-list-item__info">Апартаменты</span>
-                <span class="filter-results-list-item__info">от 2000 Р.</span>
+                <span class="filter-results-list-item__price-info">от 2000 Р.</span>
               </div>
               <div class="filter-results-list-item-buttons">
                 <a href="#" class="filter-results-list-item_about"><span class="button_about">Подробнее</span></a>
@@ -180,9 +176,7 @@
               <div class="rating-stars">
               </div>
             </div>
-            <div class="rating-value">
-              <span class="filter-results-list_rating">Рейтинг 9,2</span>
-            </div>
+              <span class="filter-results-list_rating">Рейтинг:9,2</span>
           </div>
         </div>
       </div>
@@ -201,8 +195,10 @@
     </div>
   </div>
   <div class="footer-autors">
+    <div class="footer-autors-box">
     <p class="footer-autors__label">Website by</p>
     <a href="#" class="html-academy"><img class="html-academy-logo" src="img/logo-name.svg" alt="HTML-академия" width="115" height="41"></a>
+      </div>
   </div>
 </footer>
 </div>

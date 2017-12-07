@@ -6,13 +6,13 @@
   <link type="text/css" rel="stylesheet" href="./css/style.css">
   <link type="text/css" rel="stylesheet" href="./css/normilize.css">
 </head>
-<body>
+<body class="body-index">
 <div class="wrapper">
   <header class="header">
     <nav class="main-navigation">
       <a class="logo" href="#"><img class="main-menu__item-logo" src="img/logo-sedona.png" alt="Логотип"></a>
       <ul class="site-navigation">
-        <li class="main-menu__item">Информация</li>
+        <li ><a class="main-menu__item">Информация</a></li>
         <li><a class="main-menu__item" href="#">Фото и видео</a></li>
         <li><a class="main-menu__item" href="#">Карта штата</a></li>
         <li><a class="main-menu__item" href="#">Гостиницы</a></li>
@@ -31,82 +31,65 @@
     <div class="main-features-box">
       <div class="reasons-list">
         <div class="reasons-item">
-          <div class="reasons-item-box">
             <span class="reasons-item__label">Настоящий<br>городок</span>
             <span class="reasons-item__number">  — №1 —</span>
             <p class="reasons-item__slogan">Седона — не аттракцион для туристов,<br> там течет своя жизнь</p>
-        </div>
         </div>
         <div class="first-reasons-image"></div>
       </div>
     </div>
     <div class="categories">
       <div class="categories-item">
-        <div class="categories-item-box">
           <div class="categories-item__housing-photo"> </div>
           <span class="categories-item__label">Жилье</span>
           <p class="categories-item__slogan">Рекомендуем пожить в настоящем<br> мотеле, все как в кино!</p>
-        </div>
       </div>
       <div class="categories-item">
-        <div class="categories-item-box">
           <div class="categories-item__food-photo"> </div>
           <span class="categories-item__label">Еда</span>
           <p class="categories-item__slogan">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,<br>
             Вы НЕ разочаруетесь!
           </p>
-        </div>
       </div>
       <div class="categories-item">
-        <div class="categories-item-box">
           <div class="categories-item__souvenir-photo"> </div>
           <span class="categories-item__label">Сувениры</span>
           <p class="categories-item__slogan">Не только китайского, но и местного<br>производства!</p>
-        </div>
       </div>
     </div>
     <div class="main-features-box">
       <div class="reasons-list">
         <div class="second-reasons-image"></div>
         <div class="reasons-item">
-          <div class="reasons-item-box">
             <span class="reasons-item__label">Там есть<br>мост дьявола</span>
             <span class="reasons-item__number">  — №2 —</span>
             <p class="reasons-item__slogan">Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
-          </div>
         </div>
       </div>
     </div>
     <div class="main-features-list">
       <div class="reasons-list">
         <div class="reasons-item">
-          <div class="reasons-item-box">
             <span class="reasons-item__label">Небольшая<br>площадь</span>
             <span class="reasons-item__number">  — №3 —</span>
             <p class="reasons-item__slogan"> Все достопримечательности<br> находятся очень близко
             </p>
-          </div>
         </div>
       </div>
       <div class="reasons-list">
         <div class="reasons-item">
-          <div class="reasons-item-box">
-            <span class="reasons-item__label">КРАСИВАЯ<br>ДОРОГА</span>
+            <span class="reasons-item__label">Красивая<br>дорога</span>
             <span class="reasons-item__number">  — №4 —</span>
             <p class="reasons-item__slogan"> Ехать в Седону из Лас-Вегаса совсем<br>
               не скучно!
             </p>
-          </div>
         </div>
       </div>
       <div class="reasons-list">
         <div class="reasons-item">
-          <div class="reasons-item-box">
-                        <span class="reasons-item__label">Мало<br>
-                        Туристов</span>
+            <span class="reasons-item__label">Мало<br>туристов</span>
             <span class="reasons-item__number">  — №5 —</span>
             <p class="reasons-item__slogan">Большинство едет в гранд каньон и<br>толпится там</p>
-          </div>
         </div>
       </div>
     </div>
@@ -130,31 +113,30 @@
               <label class="fields__label" for="fields__input-leave">Дата выезда: </label>
               <input class="fields__input" id="fields__input-leave" type="text" value="4 июля 2017">
             </div>
-            <div class="counter-left">
-              <label class="fields__label" for="ad_counter">Взрослые:</label>
-              <div class="counter__down">
-              </div>
-              <input id="ad_counter" class="counter__input" type="text" value="2">
-              <div class="counter__up">
-
-              </div>
+          </div>
+          <div class="counter-box">
+          <div class="counter-left">
+            <label class="fields__label" for="ad_counter">Взрослые:</label>
+            <div class="counter__down">
             </div>
-            <div class="counter-right">
-              <label class="fields__label" for="ch_counter">Дети:</label>
-              <div class="counter__down">
-              </div>
-              <input id="ch_counter" class="counter__input"  type="text" value="3">
-              <div class="counter__up">
-              </div>
+            <input id="ad_counter" class="counter__input" type="text" value="2">
+            <div class="counter__up">
+            </div>
+            </div>
+          <div class="counter-right">
+            <label class="fields__label" for="ch_counter">Дети:</label>
+            <div class="counter__down">
+            </div>
+            <input id="ch_counter" class="counter__input"  type="text" value="0">
+            <div class="counter__up">
             </div>
           </div>
+          </div>
           <button class="fields__button" type="submit">Найти</button>
-        </div>
-      <div class="offer-box">
+       </div>
         <iframe class="interactive-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d592197.205354667!2d-111.52879084232032!3d34.92004186077738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1512518532531"
                 width="1200" height="474" frameborder="0" style="border:0" allowfullscreen></iframe>
-        <img class="map" src="img/map.jpg" alt="Карта" width="1202" height="535"> </div>
-      </div>
+        <img class="map" src="img/map.jpg" alt="Карта" width="1202" height="590"> </div>
   </main>
   <footer class="footer">
     <div class="footer-label">
@@ -168,8 +150,10 @@
       </div>
     </div>
     <div class="footer-autors">
+      <div class="footer-autors-box">
       <p class="footer-autors__label">Website by</p>
-      <a href="#" class="html-academy"><img class="html-academy-logo" src="img/logo-name.svg" alt="HTML-академия" width="115" height="41"></a>
+      <a href="#" class="html-academy"></a>
+      </div>
     </div>
   </footer>
 </div>

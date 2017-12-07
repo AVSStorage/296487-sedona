@@ -47,7 +47,7 @@ body
   min-height	: 1750px;
   text-transform	: uppercase;
   width	: 1200px;
-  padding: 0 36px;
+  padding: 0 18px;
 }
 .header
 {
@@ -542,7 +542,7 @@ body
   margin-left: 7px;
 }
 .fields-box2{;
-  margin-top:11px;
+  margin-top:12px;
 }
 .fields-box2 .fields__input{
   margin-left:13px;

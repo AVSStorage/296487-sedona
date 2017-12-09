@@ -621,11 +621,6 @@ body
   -webkit-animation: bounce .6s;
   animation: bounce .6s;
 }
-.input-error
-{
-  -webkit-animation: shake .6s;
-  animation: shake .6s;
-}
 .fields
 {
   display: -webkit-box;
@@ -1614,7 +1609,7 @@ body
 
 .filter-results-list-item__descr
 {
-  width: 355px;
+  width: 365px;
   min-height: 103px;
   margin-left: 28px;
 }

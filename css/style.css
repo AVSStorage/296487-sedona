@@ -113,7 +113,6 @@ body
   line-height: 26px;
 
   width: 1200px;
-  min-height: 1750px;
   margin: 0 auto;
   padding: 0 36px;
 
@@ -199,12 +198,12 @@ body
 {
   margin-right: 8%;
 }
-.site-navigation li:first-child:active
+.site-navigation li:active
 {
   opacity: .3;
   color: #000;
 }
-.site-navigation li:first-child:hover
+.site-navigation li:hover
 {
   color: #81b3d2;
 }
@@ -531,7 +530,7 @@ body
   display: inline-block;
 
   width: 1200px;
-  min-height: 290px;
+  min-height: 289px;
 
   text-align: center;
   vertical-align: middle;
@@ -572,7 +571,7 @@ body
 {
   position: absolute;
   z-index: 1;
-  top: 289px;
+  top: 291px;
   left: 0;
 
   border: none;
@@ -585,7 +584,7 @@ body
   line-height: inherit;
 
   width: 558px;
-  height: 82px;
+  height: 83px;
   margin-top: 27px;
 
   text-transform: inherit;
@@ -677,7 +676,7 @@ body
 {
   position: absolute;
   z-index: 1;
-  bottom: 15px;
+  bottom: 17px;
   left: 87%;
 
   width: 20px;
@@ -694,7 +693,7 @@ body
 {
   position: absolute;
   z-index: 1;
-  bottom: 15px;
+  bottom: 17px;
   left: 87%;
 
   width: 20px;
@@ -711,7 +710,7 @@ body
 {
   position: absolute;
   z-index: 1;
-  bottom: 15px;
+  bottom: 17px;
   left: 87%;
 
   width: 20px;

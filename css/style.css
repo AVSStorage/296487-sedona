@@ -114,12 +114,11 @@ body
 
   width: 1200px;
   margin: 0 auto;
-  padding: 0 36px;
 
   text-transform: uppercase;
 
   color: black;
-  background-color: gainsboro;
+  background-color: #f2f2f2;
 }
 .header
 {
@@ -178,7 +177,7 @@ body
 }
 .site-navigation li:nth-child(4n+1)
 {
-  margin-left: 33px;
+  margin-left: 32px;
 }
 .site-navigation li:nth-child(4n+1),
 .site-navigation li:nth-child(4n+2)
@@ -297,9 +296,9 @@ body
   width: 805px;
 
   background-color: #fff;
-  background-image: url('../img/reason-back.jpg');
+  background-image: url('../img/slice-1.jpg');
   background-repeat: no-repeat;
-  background-position: 0 -77px;
+  background-position: 0 0;
   background-size: cover;
 }
 .second-reasons-image
@@ -307,9 +306,9 @@ body
   width: 805px;
 
   background-color: #fff;
-  background-image: url('../img/reason-back2.jpg');
+  background-image: url('../img/slice-2.jpg');
   background-repeat: no-repeat;
-  background-position: 0 -77px;
+  background-position: 0 0;
   background-size: cover;
 }
 .reasons-item
@@ -609,16 +608,16 @@ body
   width: 570px;
   min-height: 393px;
 
+  -webkit-animation: bounce .6s;
+  animation: bounce .6s;
+
   background-color: #fff;
   -webkit-box-shadow: 0 7px 15px rgba(0, 1, 1, .15);
   box-shadow: 0 7px 15px rgba(0, 1, 1, .15);
 }
 .input-show
 {
-  visibility: visible;
-
-  -webkit-animation: bounce .6s;
-  animation: bounce .6s;
+  visibility: hidden;
 }
 .fields
 {
@@ -671,53 +670,62 @@ body
   border: 2px solid #e5e5e5;
   background-color: #fff;
 }
-.fields-box1::before,
-.fields-box2::before
+.calendar__button
 {
+  font-size: 0;
+
   position: absolute;
   z-index: 1;
   bottom: 17px;
   left: 87%;
 
-  width: 20px;
+  width: 10px;
   height: 20px;
 
   content: '';
 
+  border: none;
+  background-color: transparent;
   background-image: url('../img/calendar.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-.fields-box1:hover::before,
-.fields-box2:hover::before
+.calendar__button:hover
 {
+  font-size: 0;
+
   position: absolute;
   z-index: 1;
   bottom: 17px;
   left: 87%;
 
-  width: 20px;
+  width: 10px;
   height: 20px;
 
   content: '';
 
+  border: none;
+  background-color: transparent;
   background-image: url('../img/calendarblack.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-.fields-box1:active::before,
-.fields-box2:active::before
+.calendar__button:active
 {
+  font-size: 0;
+
   position: absolute;
   z-index: 1;
   bottom: 17px;
   left: 87%;
 
-  width: 20px;
+  width: 10px;
   height: 20px;
 
   content: '';
 
+  border: none;
+  background-color: transparent;
   background-image: url('../img/calendaractive.svg');
   background-repeat: no-repeat;
   background-position: 0 0;

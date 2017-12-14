@@ -86,9 +86,9 @@ body{
   padding-top: 510px;
 
   background-color: #fff;
-  background-image: url('../img/index-right-shape.png'),url('../img/index-left-shape.png'),url('../img/index-inscription.png'),url('../img/index-background-photo.jpg');
-  background-repeat: no-repeat,no-repeat,no-repeat,no-repeat;
-  background-position: 600px 451px,0 451px,371px 76px, 0 0;
+  background-image: url("../img/index-shape.png"),url('../img/index-inscription.png'),url('../img/index-background-photo.jpg');
+  background-repeat: no-repeat,no-repeat,no-repeat;
+  background-position:0 451px,371px 76px, 0 0;
 }
 .main-navigation
 {

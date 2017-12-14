@@ -47,65 +47,14 @@
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
-
-@-webkit-keyframes shake
+.header
 {
-  0%,
-  100%
-  {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
+  width: 1200px;
+  min-height: 55px;
 
-  10%,
-  30%,
-  50%,
-  70%,
-  90%
-  {
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80%
-  {
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px);
-  }
+  background-color: #fff;
 }
-
-@keyframes shake
-{
-  0%,
-  100%
-  {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90%
-  {
-    -webkit-transform: translateX(-10px);
-    transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80%
-  {
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px);
-  }
-}
-body
+.body-box
 {
   font-family: 'PT Sans', 'Arial',sans-serif;
   font-size: 14px;
@@ -113,19 +62,12 @@ body
   line-height: 26px;
 
   width: 1200px;
-  margin: 0 auto;
+  margin: 0 6%;
 
   text-transform: uppercase;
 
   color: black;
-  background-color: #f2f2f2;
-}
-.header
-{
-  width: 1200px;
-  min-height: 55px;
-
-  background-color: #fff;
+  background-color: #e7e7e7;
 }
 .wrapper
 {
@@ -141,9 +83,9 @@ body
   padding-top: 510px;
 
   background-color: #fff;
-  background-image: url('../img/7-layers.jpg');
-  background-repeat: no-repeat;
-  background-position: 0 -53px;
+  background-image: url('../img/index-right-shape.png'),url('../img/index-left-shape.png'),url('../img/index-inscription.png'),url('../img/index-background-photo.jpg');
+  background-repeat: no-repeat,no-repeat,no-repeat,no-repeat;
+  background-position: 600px 451px,0 451px,371px 76px, 0 0;
 }
 .main-navigation
 {
@@ -287,15 +229,16 @@ body
   width: 1200px;
   min-height: 255px;
 
+  background-color: #81b3d2;
+
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-  background-color: #81b3d2;
 }
 .first-reasons-image
 {
   width: 805px;
-  height:255px;
+  height: 255px;
 
   background-color: #fff;
   background-image: url('../img/slice-1.jpg');
@@ -306,7 +249,7 @@ body
 .second-reasons-image
 {
   width: 805px;
-  height:255px;
+  height: 255px;
 
   background-color: #fff;
   background-image: url('../img/slice-2.jpg');
@@ -324,7 +267,6 @@ body
   min-height: 255px;
 
   color: #fff;
-
 }
 
 .reasons-item .reasons-item__label
@@ -364,8 +306,8 @@ body
   width: 307px;
   margin: 0;
   padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 46px;
-  padding-bottom:20px;
 
   text-align: center;
 
@@ -443,8 +385,8 @@ body
 
   width: 288px;
   margin: 0;
-  padding-left: 56px;
   padding-bottom: 20px;
+  padding-left: 56px;
 
   text-align: center;
 }
@@ -511,14 +453,15 @@ body
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
 }
-.map
+.map-box
 {
-  position: absolute;
-  top: 290px;
-  left: 0;
-
   width: 1200px;
-  min-height: 535px;
+  min-height: 475px;
+
+  background-image: url('../img/map.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 1200px 465px;
 }
 .offer-box
 {
@@ -527,8 +470,6 @@ body
 .offer-preview
 {
   line-height: 24px;
-
-  position: relative;
 
   display: -webkit-box;
   display: inline-block;
@@ -573,11 +514,6 @@ body
 }
 .interactive-map
 {
-  position: absolute;
-  z-index: 1;
-  top: 291px;
-  left: 0;
-
   border: none;
 }
 .search-hotels__button
@@ -587,7 +523,7 @@ body
   font-weight: 700;
   line-height: inherit;
 
-  width: 558px;
+  width: 556px;
   height: 83px;
   margin-top: 27px;
 
@@ -607,12 +543,16 @@ body
   background-color: #503e33;
 }
 .input
-{ visibility: hidden;
-  z-index: 2;
+{
+  position: absolute;
+  z-index: 3;
+  bottom: 83px;
+  left: 315px;
+
+  visibility: hidden;
 
   width: 570px;
   min-height: 393px;
-
 
   background-color: #fff;
   -webkit-box-shadow: 0 7px 15px rgba(0, 1, 1, .15);
@@ -621,6 +561,7 @@ body
 .input-show
 {
   visibility: visible;
+
   -webkit-animation: bounce .6s;
   animation: bounce .6s;
 }
@@ -633,7 +574,7 @@ body
 
   width: 495px;
   min-height: 120px;
-  margin: 55px 52px 0;
+  margin: 56px 51px 0;
 
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -672,7 +613,7 @@ body
 }
 .fields__input:focus
 {
-  border: 2px solid #e5e5e5;
+  outline: 2px solid #e5e5e5;
   background-color: #fff;
 }
 .calendar__button
@@ -681,11 +622,11 @@ body
 
   position: absolute;
   z-index: 1;
-  bottom: 17px;
+  bottom: 15px;
   left: 87%;
 
   width: 10px;
-  height: 20px;
+  height: 22px;
 
   content: '';
 
@@ -701,11 +642,11 @@ body
 
   position: absolute;
   z-index: 1;
-  bottom: 17px;
+  bottom: 15px;
   left: 87%;
 
   width: 10px;
-  height: 20px;
+  height: 22px;
 
   content: '';
 
@@ -721,11 +662,11 @@ body
 
   position: absolute;
   z-index: 1;
-  bottom: 17px;
+  bottom: 15px;
   left: 87%;
 
   width: 10px;
-  height: 20px;
+  height: 22px;
 
   content: '';
 
@@ -814,7 +755,7 @@ body
 .counter-left .fields__label
 {
   margin-right: 40px;
-  padding-left: 8px;
+  padding-left: 7px;
 }
 .counter__input
 {
@@ -930,7 +871,7 @@ body
 
   width: 152px;
   min-height: 49px;
-  padding: 9% 31%;
+  padding: 8% 31%;
 
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1019,7 +960,7 @@ body
 {
   width: 115px;
   height: 41px;
-  margin-top: 38px;
+  margin-top: 37px;
   margin-left: 5px;
 }
 .footer-autors-box
@@ -1065,7 +1006,6 @@ body
 
   width: 412px;
   margin-left: 66px;
-
 
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -1130,15 +1070,15 @@ body
 
   width: 100px;
   height: 24px;
-  padding-top: 10px;
+  padding-top: 11px;
   padding-left: 45px;
 
-  letter-spacing: -.8px;
   text-transform: uppercase;
 
   color: #fff;
 }
-.sorter-item__input + .sorter-item__label:last-of-type{
+.sorter-item__input + .sorter-item__label:last-of-type
+{
   padding-bottom: 10px;
 }
 .sorter-list__label
@@ -1148,7 +1088,7 @@ body
   line-height: 21px;
 
   padding-top: 25px;
-  padding-left: 3px;
+  padding-left: px;
 
   letter-spacing: .3px;
   text-transform: uppercase;
@@ -1223,7 +1163,7 @@ body
 {
   width: 335px;
   min-height: 150px;
-  margin-right: 57px;
+  margin-right: 55px;
 }
 .sorting__up
 {
@@ -1608,7 +1548,7 @@ body
   display: flex;
   flex-direction: row;
 
-  width: 430px;
+  width: 600px;
   min-height: 149px;
   margin-left: 73px;
 
@@ -1633,7 +1573,7 @@ body
   line-height: 26px;
 
   margin: 0;
-  padding-top:10px;
+  padding-top: 10px;
 
   letter-spacing: .1px;
   text-transform: uppercase;
@@ -1665,7 +1605,8 @@ body
   display: inline-block;
 
   margin-top: 15px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
+
   text-align: center;
   vertical-align: middle;
   text-decoration: none;

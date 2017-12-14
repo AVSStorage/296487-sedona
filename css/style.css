@@ -54,6 +54,9 @@
 
   background-color: #fff;
 }
+body{
+  background-color: #e7e7e7;
+}
 .body-box
 {
   font-family: 'PT Sans', 'Arial',sans-serif;
@@ -62,12 +65,11 @@
   line-height: 26px;
 
   width: 1200px;
-  margin: 0 6%;
+  margin: 0 auto;
 
   text-transform: uppercase;
 
   color: black;
-  background-color: #e7e7e7;
 }
 .wrapper
 {
